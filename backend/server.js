@@ -33,7 +33,7 @@ app.use('/product', ProductRoutes);
 app.use('/category',CategoryRoutes);
 
 // Connect to database and start server
-app.listen(PORT, async () => {
+app.listen(PORT||8080, async () => {
   await connect();
   console.log(`running at http://localhost:${PORT}`);
 });
