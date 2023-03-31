@@ -3,7 +3,7 @@ require("dotenv").config();
 
 // Import required packages
 const express = require('express');
-const connectDB = require('./src/Config/db');
+const connect = require('./src/Config/db');
 const cors = require('cors');
 
 // Set port number
@@ -33,17 +33,7 @@ app.use('/product', ProductRoutes);
 app.use('/category',CategoryRoutes);
 
 // Connect to database and start server
-async function startServer() {
-  try {
-    await connectDB();
-    console.log("Connected to MongoDB");
-    app.listen(PORT, () => {
-      console.log(`Server started on http://localhost:${PORT}`);
+app.listen(PORT, async () => {
+  await connect();
+  console.log(`running at http://localhost:${PORT}`);
 });
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-// Start the server
-startServer();

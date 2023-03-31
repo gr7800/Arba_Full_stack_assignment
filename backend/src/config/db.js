@@ -1,7 +1,13 @@
-// This is a MongoDB connection module using Mongoose.
 const mongoose = require("mongoose");
+require("dotenv").config();
+const URL = process.env.URL;
 
-// Export an async function that connects to the MongoDB database specified in the .env file.
-module.exports = connect = async () => {
-return await mongoose.connect(process.env.URL);
+const connect = () => {
+    mongoose.set("strictQuery", false);
+    return mongoose.connect(URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    });
 };
+
+module.exports = connect;
