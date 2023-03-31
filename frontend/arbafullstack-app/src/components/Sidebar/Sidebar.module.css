@@ -1,0 +1,10 @@
+.box{
+    width: 100%;
+    height: 100vh;
+    background-color: #00abc5;
+}
+@media (max-width: 768px) {
+    .box {
+        display: none;
+    }   
+}
