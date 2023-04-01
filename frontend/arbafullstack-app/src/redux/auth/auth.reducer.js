@@ -8,7 +8,6 @@ export const authInitalState = {
   loading: false,
   data: {
     token: "",
-    refreshtoken: "",
     isAuthenticated: false,
   },
   error: false,
@@ -20,7 +19,6 @@ export const authReducer = (state = authInitalState, action) => {
       return {
         ...state,
         data: {
-          refreshtoken: action.payload.refreshToken,
           token: action.payload.token,
           isAuthenticated: true,
         },
@@ -30,12 +28,20 @@ export const authReducer = (state = authInitalState, action) => {
       return {
         ...state,
         error: true,
+        data: {
+          token: "",
+          isAuthenticated: false,
+        },
       };
     }
     case AUTH_LOG_IN_LOADING: {
       return {
         ...state,
         loading: true,
+        data: {
+          token: "",
+          isAuthenticated: false,
+        },
       };
     }
     default: {

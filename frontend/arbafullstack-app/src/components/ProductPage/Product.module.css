@@ -1,0 +1,93 @@
+/* Styling for the overall product container */
+.ProductContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid red;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for an individual product within the container */
+.SingleProduct {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the product image */
+.productimage {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Styling for the product description */
+.productdescription {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    margin: auto;
+    margin-top: -30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Styling for the product description header */
+.productdescription>h4 {
+    color: rgb(16, 202, 202);
+}
+
+/* Styling for the add-to-cart button */
+.Product_Add_ToCart {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(16, 202, 202);
+    color: white;
+}
+
+/* Styling for the product quantity selector */
+.Product_Quantity {
+    background-color: rgb(16, 202, 202);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 20px;
+}
+
+/* Styling for the quantity selector buttons */
+.Product_Quantity>button,
+.Product_Quantity>span {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0px 20px 0px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Media query for smaller screens, adjusts the grid layout to 2 columns */
+@media (max-width: 768px) {
+    .ProductContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 2px solid red;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* Media query for even smaller screens, adjusts the grid layout to 1 column */
+@media (max-width: 425px) {
+    .ProductContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border: 2px solid red;
+        gap: 20px;
+        padding: 20px;
+    }
+}

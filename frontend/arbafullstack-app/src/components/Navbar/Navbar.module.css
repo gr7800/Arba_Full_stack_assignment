@@ -1,12 +1,15 @@
+/* Define the styles for the navigation bar */
 .nav {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* Add a box shadow effect to the navigation bar */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px 0px 20px;
 }
 
+/* Define the styles for the first box in the navigation bar */
 .bx_1 {
   position: relative;
   display: flex;
@@ -15,6 +18,7 @@
   gap: 30px;
 }
 
+/* Define the styles for the count bubble */
 .count {
   display: flex;
   justify-content: center;
@@ -25,17 +29,21 @@
   top: 5px;
   left: 20px;
   background-color: #51aa63;
+  /* Set the background color of the count bubble */
   color: #ffffff;
+  /* Set the font color of the count bubble */
   border-radius: 50%;
+  /* Add a circular border radius to the count bubble */
 }
 
+/* Define the styles for the dropdown menu */
 .dropdown {
   position: relative;
   display: flex;
   flex-direction: column;
-  
 }
 
+/* Define the styles for the dropdown menu content */
 .dropdownContent {
   display: flex;
   flex-direction: column;
@@ -43,11 +51,15 @@
   top: 60px;
   right: -15px;
   background-color: lightblue;
+  /* Set the background color of the dropdown menu */
   min-width: 120px;
-  z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* Add a box shadow effect to the dropdown menu */
+  z-index: 3;
+  /* Set the z-index to ensure the dropdown menu appears above other elements */
 }
 
+/* Define the styles for the links within the dropdown menu */
 .dropdownContent a {
   color: black;
   padding: 12px 16px;
@@ -55,24 +67,26 @@
   display: block;
 }
 
+/* Define the styles for the hover effect on the links within the dropdown menu */
 .dropdownContent a:hover {
   background-color: #f1f1f1;
 }
 
+/* Define the styles for the image in the navigation bar */
 .img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  /* Add a circular border radius to the image */
   cursor: pointer;
 }
 
+/* Define the styles for the logo in the navigation bar */
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  width: 70px;
-  padding: 10px;
-  background-color: #00abc5;
+  width: 100px;
   color: #ffffff;
+  /* Set the font color of the logo */
 }

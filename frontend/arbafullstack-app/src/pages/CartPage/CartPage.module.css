@@ -1,0 +1,25 @@
+.CartContainer{
+    width: 100%;
+}
+.CartContainer>h1{
+    margin: 10px 20px 10px 20px;
+    color: rgba(19, 182, 182, 0.763);
+}
+.checkout{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.checkout>button{
+    background-color:rgba(17, 202, 202, 0.763) ;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+.checkout>button:hover{
+    background-color: red;
+}
+

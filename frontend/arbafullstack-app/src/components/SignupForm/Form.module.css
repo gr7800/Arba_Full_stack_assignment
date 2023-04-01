@@ -1,3 +1,4 @@
+/* This CSS block styles the container box and centers the child element within it. */
 .box {
   width: 100%;
   display: flex;
@@ -5,10 +6,14 @@
   align-items: center;
   text-align: center;
 }
+
+/* This CSS block styles the child element with a set width and padding. */
 .child {
   width: 80%;
   padding: 0 15% 0 15%;
 }
+
+/* This CSS block styles the square element with a set width, height, and background color. It is also centered within the child element. */
 .sqr {
   width: 100px;
   height: 100px;
@@ -16,21 +21,29 @@
   border-radius: 50%;
   background-color: #00abc5;
 }
+
+/* This CSS block styles the text element with a set font size and margin. */
 .text {
   font-size: 20px;
   margin: 20px 0px 0px 0px;
 }
+
+/* This CSS block styles the form element with a set display, flex direction, and gap. */
 .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
+/* This CSS block styles the input element with a set border, outline, padding, and font size. */
 .input {
   border: none;
   outline: none;
   padding: 5px 0 5px 0;
   font-size: 18px;
 }
+
+/* This CSS block styles the input div with a set display, justification, alignment, border, padding, and font size. */
 .input_div {
   display: flex;
   justify-content: space-between;
@@ -40,6 +53,8 @@
   font-size: 18px;
   padding-right: 10px;
 }
+
+/* This CSS block styles the button with a set width, height, font size, background color, color, margin, border, and border radius. */
 .btn {
   width: 100%;
   height: 35px;
@@ -51,10 +66,14 @@
   outline: none;
   border-radius: 30px;
 }
+
+/* This CSS block styles the text2 element with a set font size and margin top. */
 .text2 {
   font-size: 18px;
   margin-top: 20px;
 }
+
+/* This CSS block styles the text2_color element with a set color. */
 .text2_color {
   color: #00abc5;
 }

@@ -1,9 +1,13 @@
-.box{
+/* Styles for a container with a background color of #00abc5 that takes up the full viewport height and width */
+.box {
     width: 100%;
     height: 100vh;
     background-color: #00abc5;
 }
+
+/* Media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
+    /* Hide the box container when the screen is smaller than 768px */
     .box {
         display: none;
     }   

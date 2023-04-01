@@ -1,0 +1,50 @@
+.window {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* transparent background */
+}
+
+.child_window {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.conditins {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
